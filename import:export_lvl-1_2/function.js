@@ -26,9 +26,9 @@ const uniqueElements = (data) => [...new Set(data)];
 
 const sumAllElements = (data) => data.reduce((sum, num) => sum += num);
 
-// return random number that lies between the two arguments
+// return random number that lies between the two values
 
-const returnRandomNum = (num1, num2) => Math.round(Math.random(num1) * num2);
+const returnRandomNum = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
 
 // first letter to uppercase
 
